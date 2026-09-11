@@ -1,0 +1,23 @@
+
+You are given Two tasks
+
+1. Generate test data of atleast 500 folder identifiers and atleast 50000 jpeg filenames.
+2. Given the test data write a script (in a scripting language of your choice) or pseudocode to bucket the jpeg files against their corresponding folders -- show a structured output in any text format.
+
+A list of folder identifiers
+MS-011_1_1_1_1, MS-011_1_1_1_1, MS-011_1_1_1_1...MS-011_1_2_6_341...MS-011_6_1_6_341
+
+A list of scanned jpeg files with filenames
+MS-011_1_1_1_1_J_0001.jpg, MS-011_1_1_1_1_J_0002.jpg....MS-011_1_1_1_1_J_0582.jpg
+
+
+constaints are things which have to be fufilled in every step of the way else, disqualification of output and associated task will occur. Therefore follow the constraints.
+
+Constraints:
+-To send test data / pseudocode, if needed, share a website link/URL to a website or cloud-based folder. We can make a public access github repo and share the link to them.
+-Submitting code written with LLM-assistance is allowed.
+-If you are using agentic tools (Claude Code, GitHub Co-pilot, Cursor, Codex or others)
+we would like to see screenshot of your prompts and instruction files (CLAUDE.MD, copilot-instructions.md or others)
+
+-This would allow us to evaluate your comfort and efficiency, working with agentic tools.
+-When agentic tools are used, we will only consider submission that are made openly accessible on a code repository. Please add the link to the repository in the answer below.

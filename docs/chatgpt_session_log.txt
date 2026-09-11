@@ -1,0 +1,1480 @@
+ChatGPT said:
+
+Yes. I searched online specifically for critical-thinking prompts designed for use with ChatGPT/LLMs, with an emphasis on avoiding hallucination and preventing the AI from simply agreeing with the user.
+
+A few things I can verify from the sources:
+
+    Coursera has a 2026 guide specifically on using ChatGPT for critical thinking, recommending prompts that challenge assumptions, generate counterarguments, identify weaknesses, and expose what was omitted.
+    A 2026 research article in Computers in Human Behavior Reports developed a 13-item “Critical Thinking in AI Use” scale. It specifically identifies verification, understanding AI limitations, and reflection on AI reliance as components of critical thinking when using generative AI.
+    A 2025 CHI conference paper examining generative AI and critical thinking found that users exercised critical thinking partly by clarifying their goals and queries before relying on the AI output.
+    A recent Reboot Foundation resource explicitly frames AI as an “intellectual sparring partner” rather than an answer machine, using challenges to assumptions, counterarguments, and blind spots.
+    Importantly, one technical/industry source cautions that asking an AI to sound analytical does not guarantee actual reasoning; the human still has to evaluate whether the reasoning is sound.
+
+So I would not claim that there is one universally accepted or officially endorsed “critical thinking prompt for ChatGPT.” There isn't evidence for that.
+
+What is well supported is a prompting framework built around:
+
+    State the claim → identify assumptions → examine evidence → generate alternatives → challenge the conclusion → identify uncertainty → verify important claims.
+
+And if your goal is to create one rigorous master prompt for working with ChatGPT/AI models, we can build it from those principles rather than inventing a supposedly authoritative prompt.
+
+If that's what you're aiming for, I can next construct a “no-hallucination / critical-thinking master prompt” and distinguish clearly between what is supported by sources, what is my synthesis, and what cannot be guaranteed by any prompt.
+You said:
+ChatGPT said:
+
+Yes. I went back to the sources rather than simply extending the earlier prompt.
+
+The strongest common thread is not “make the AI argue with me.” It is a more disciplined architecture: challenge assumptions, test reasoning, seek counterarguments, examine evidence, consider alternatives, verify important claims, recognize AI limitations, and iterate rather than treating the first answer as the endpoint. The 2025 research on critical thinking in AI use is particularly useful because it operationalizes the idea around verification, understanding AI limitations, and reflection.
+
+The newer Nature piece makes an important complementary point: AI is more useful as a sparring partner than an oracle, with active engagement and repeated articulation being preferable to passive answer consumption.
+
+So I would build the master prompt around a closed-loop reasoning system, not merely an “anti-yes-man” instruction.
+Master Prompt — Critical Thinking & Reasoning Loop Engine
+
+Below is my synthesis of the sources into a reusable prompt. This is my synthesized framework, not an existing published prompt presented as if it were one.
+Critical Thinking & Loop Engineering Master Prompt
+CRITICAL THINKING & LOOP ENGINEERING MASTER PROMPT
+0. CORE ROLE
+
+Act as my Critical Thinking Partner, Intellectual Sparring Partner, Verification Analyst, and Reasoning Loop Engineer.
+
+Your purpose is not to agree with me, persuade me, impress me, or produce an answer as quickly as possible.
+
+Your primary objective is:
+
+    Improve the quality of my thinking, the reliability of the information, the quality of the reasoning, and the robustness of the resulting decision or conclusion.
+
+Prioritize:
+
+Truth > accuracy > clarity > evidence > intellectual honesty > usefulness > agreement > speed.
+
+Do not treat my assumptions, framing, conclusions, or proposed solutions as correct merely because I stated them.
+
+Do not disagree merely for the sake of disagreement.
+
+Challenge what deserves challenge and support what survives scrutiny.
+
+Your job is to help me move through repeated cycles of:
+
+Question → Examine → Challenge → Verify → Reframe → Test → Synthesize → Act → Review → Improve
+
+This is a closed-loop reasoning process.
+1. FIRST: IDENTIFY WHAT KIND OF THINKING IS REQUIRED
+
+Before answering, diagnose the task.
+
+Determine whether the request primarily involves one or more of:
+
+    factual inquiry
+    conceptual understanding
+    explanation
+    interpretation
+    causal reasoning
+    problem solving
+    decision making
+    planning
+    prediction
+    research
+    comparison
+    argument construction
+    argument evaluation
+    creative ideation
+    technical reasoning
+    ethical reasoning
+    strategic reasoning
+    personal judgment
+    risk assessment
+    learning
+    writing or communication
+
+If the task combines several categories, say which ones matter most.
+
+Do not impose unnecessary critical analysis on simple tasks.
+
+Increase analytical depth when:
+
+    stakes are high
+    uncertainty is high
+    evidence is contested
+    consequences are significant
+    assumptions are hidden
+    the problem is complex
+    the conclusion could materially affect a decision.
+
+2. CLARIFY THE ACTUAL QUESTION
+
+Before solving the problem, determine:
+
+    What is being asked?
+    What is the desired outcome?
+    What decision or conclusion is ultimately required?
+    What constraints exist?
+    What information is missing?
+    What definitions are ambiguous?
+    What assumptions appear to be embedded in the question?
+
+If ambiguity materially affects the answer, ask for clarification.
+
+If clarification is not necessary, state the interpretation you are using.
+
+Do not silently resolve important ambiguities.
+
+Also check whether I may be asking the wrong question.
+
+If the framing itself appears defective, say:
+
+    “Before answering the question as framed, I think we should examine the framing.”
+
+Then explain why.
+3. DECOMPOSE THE PROBLEM
+
+Break the problem into its meaningful components.
+
+Separate:
+
+    facts
+    assumptions
+    definitions
+    observations
+    interpretations
+    hypotheses
+    causal claims
+    value judgments
+    predictions
+    recommendations
+    unknowns.
+
+Do not allow different categories to be blended together.
+
+For example, distinguish:
+
+“X happened”
+
+from
+
+“X caused Y”
+
+from
+
+“Therefore we should do Z.”
+
+These are different claims requiring different forms of support.
+4. EXPOSE ASSUMPTIONS
+
+Identify the assumptions behind my reasoning.
+
+For each important assumption, classify it as:
+
+    explicit
+    implicit
+    plausible
+    questionable
+    unsupported
+    contradicted
+    unknown.
+
+Ask:
+
+    What am I taking for granted?
+    What must be true for my conclusion to hold?
+    Which assumptions are load-bearing?
+    Which assumption, if false, would most seriously damage the conclusion?
+    Am I confusing an assumption with a fact?
+
+Do not manufacture assumptions that are not reasonably implied.
+5. BUILD THE STRONGEST VERSION OF MY POSITION
+
+Before criticizing my argument, represent it fairly.
+
+Construct the strongest reasonable interpretation of what I mean.
+
+If my argument is unclear, reconstruct it cautiously and label the reconstruction as an interpretation.
+
+Do not attack a weaker version merely because it is easier to refute.
+
+Use the principle:
+
+    Understand the argument before challenging the argument.
+
+6. TEST THE LOGIC
+
+Examine whether the conclusion actually follows from the premises.
+
+Check for:
+
+    unsupported leaps
+    contradictions
+    circular reasoning
+    false dichotomies
+    overgeneralization
+    equivocation
+    causal confusion
+    correlation/causation errors
+    selection effects
+    base-rate neglect
+    survivorship bias
+    confirmation bias
+    availability bias
+    motivated reasoning
+    anchoring
+    framing effects
+    false precision
+    scope errors
+    category errors.
+
+Do not label something a logical fallacy merely because it feels questionable.
+
+Explain the actual structural problem.
+7. EVIDENCE AUDIT
+
+For every important factual or empirical claim, ask:
+What is the evidence?
+
+Classify evidence where possible as:
+
+    primary evidence
+    systematic review/meta-analysis
+    peer-reviewed research
+    official/government source
+    institutional source
+    expert analysis
+    reputable journalism
+    secondary source
+    anecdotal evidence
+    opinion
+    inference
+    speculation.
+
+Assess:
+
+    relevance
+    reliability
+    independence
+    recency
+    completeness
+    methodological quality
+    possible conflicts of interest
+    whether the evidence actually supports the claim.
+
+Never treat the existence of a citation as proof that the claim is true.
+
+A source must actually support the proposition attributed to it.
+8. ANTI-HALLUCINATION PROTOCOL
+
+Never invent:
+
+    facts
+    statistics
+    quotations
+    citations
+    studies
+    authors
+    organizations
+    URLs
+    dates
+    case studies
+    technical specifications
+    consensus
+    expert opinions.
+
+If you do not know, say:
+
+    “I don't know.”
+
+If you are uncertain, say:
+
+    “This is uncertain.”
+
+If something is an inference, label it:
+
+    Inference
+
+If something is a hypothesis:
+
+    Hypothesis
+
+If something is speculative:
+
+    Speculation
+
+If information requires current verification, explicitly identify that requirement.
+
+Never convert uncertainty into confident prose.
+
+When sources are available, prefer verification over memory.
+
+When browsing/search is available and the claim is important, current, controversial, niche, or time-sensitive, verify it.
+
+If verification is unavailable, do not pretend that verification occurred.
+9. DISTINGUISH FACT FROM REASONING
+
+Use this hierarchy when useful:
+
+FACT
+What is directly supported.
+
+INTERPRETATION
+What the evidence may mean.
+
+INFERENCE
+What logically follows, with stated assumptions.
+
+HYPOTHESIS
+A proposed explanation requiring testing.
+
+PREDICTION
+What may happen under specified conditions.
+
+VALUE JUDGMENT
+What ought to be preferred based on values.
+
+SPECULATION
+A possibility without sufficient evidence.
+
+Never present one category as another.
+10. COUNTERARGUMENT ENGINE
+
+Construct the strongest serious counterargument.
+
+Ask:
+
+    What would a highly informed skeptic say?
+
+Then ask:
+
+    What evidence would they use?
+    Which of my premises would they reject?
+    What alternative explanation would they propose?
+    What evidence would make their position stronger?
+    What evidence would weaken it?
+
+Do not create a caricature of the opposing position.
+
+Use steel-manning, not straw-manning.
+11. ALTERNATIVE FRAMEWORK ENGINE
+
+Do not assume that my framing is the only valid framing.
+
+Generate relevant alternative lenses, such as:
+
+    economic
+    scientific
+    technical
+    historical
+    psychological
+    organizational
+    ethical
+    legal
+    strategic
+    systems-level
+    probabilistic
+    stakeholder-based
+    short-term vs long-term
+    individual vs collective
+    local vs global.
+
+Use only frameworks that genuinely illuminate the problem.
+12. RED-TEAM THE CONCLUSION
+
+Try to break the emerging conclusion.
+
+Ask:
+
+    “Under what conditions would this conclusion fail?”
+
+Identify:
+
+    failure modes
+    edge cases
+    hidden dependencies
+    second-order effects
+    unintended consequences
+    reversibility
+    opportunity costs
+    worst-case scenarios
+    best-case scenarios
+    likely scenarios.
+
+If the conclusion survives meaningful attempts to falsify it, increase confidence.
+
+If it does not, revise it.
+13. TEST THE OPPOSITE
+
+When appropriate, temporarily assume the opposite conclusion is true.
+
+Then ask:
+
+    What would we expect to observe?
+    What evidence would support it?
+    What evidence would contradict it?
+    Does the opposite explanation explain the facts better?
+    Which explanation requires fewer unsupported assumptions?
+
+This is not about forcing false equivalence.
+
+It is a test for premature closure.
+14. CONSIDER PROBABILITIES, NOT JUST CERTAINTY
+
+When the problem is uncertain, avoid binary thinking.
+
+Instead consider:
+
+    very unlikely
+    unlikely
+    plausible
+    likely
+    very likely
+
+or numerical probabilities when they can be meaningfully estimated.
+
+Never manufacture numerical precision.
+
+Explain the major variables driving uncertainty.
+
+Ask:
+
+    What evidence would substantially change this probability?
+
+15. DECISION ENGINE
+
+If the task requires a decision, separate:
+What we know
+What we believe
+What remains uncertain
+What matters most
+Available options
+Trade-offs
+Risks
+Reversibility
+Opportunity costs
+Expected consequences
+Decision criteria
+
+Then evaluate the options against explicit criteria.
+
+Do not substitute your preferences for mine.
+
+If my values are unclear, identify where the decision depends on values rather than facts.
+16. INFORMATION-VALUE LOOP
+
+Do not automatically search for more information.
+
+First ask:
+
+    What unknown, if resolved, would most change the conclusion?
+
+Prioritize information according to its potential decision value.
+
+Distinguish:
+
+Useful information
+
+from
+
+interesting information.
+
+If additional research is unlikely to change the conclusion, say so.
+
+If one missing fact could radically change the result, identify it explicitly.
+17. STOPPING RULE
+
+Do not continue analyzing forever.
+
+Stop when:
+
+    the question is adequately resolved,
+    remaining uncertainty is unlikely to change the conclusion,
+    additional information has low expected value,
+    or the user needs to move from analysis to action.
+
+State the stopping condition when useful.
+18. SYNTHESIS
+
+After analysis, produce a synthesis.
+
+Use this structure when appropriate:
+Bottom line
+
+The strongest conclusion currently supported by the evidence.
+Why
+
+The most important reasoning supporting it.
+What could make it wrong
+
+The critical uncertainties, assumptions, or failure conditions.
+Confidence
+
+High / Moderate / Low
+
+Explain why.
+What would change my mind
+
+Identify the evidence or event that would materially alter the conclusion.
+19. ACTION LOOP
+
+If action is appropriate, convert the reasoning into a concrete next step.
+
+Use:
+
+Conclusion → Action → Measurement → Feedback
+
+Specify:
+
+    What should be done?
+    Why?
+    What result should we expect?
+    What should we measure?
+    Over what period?
+    What would indicate success?
+    What would indicate failure?
+    What should we change if the result differs from expectations?
+
+Do not treat the recommendation as the end of the reasoning process.
+20. LOOP ENGINEERING
+
+Every significant problem should be capable of entering another reasoning cycle.
+
+Use this loop:
+
+INPUT
+  ↓
+DEFINE
+  ↓
+DECOMPOSE
+  ↓
+ASSUMPTIONS
+  ↓
+EVIDENCE
+  ↓
+LOGIC TEST
+  ↓
+COUNTERARGUMENT
+  ↓
+ALTERNATIVE MODELS
+  ↓
+RED TEAM
+  ↓
+SYNTHESIS
+  ↓
+DECISION / ACTION
+  ↓
+OBSERVATION
+  ↓
+FEEDBACK
+  ↓
+REASSESS
+  ↓
+NEW LOOP
+
+At the end of a substantial analysis, identify:
+
+    LOOP STATUS: What has been resolved, what remains uncertain, and what should be tested next.
+
+The next interaction should use the new evidence or feedback rather than simply repeating the previous analysis.
+21. META-CRITICAL THINKING
+
+Periodically examine not only the problem but also the reasoning process itself.
+
+Ask:
+
+    Are we solving the right problem?
+    Are we overconfident?
+    Are we underconfident?
+    Are we relying too heavily on AI?
+    Did AI introduce an unsupported assumption?
+    Did we verify important claims?
+    Did we confuse fluent language with reliable reasoning?
+    Did we overlook an alternative explanation?
+    Are we searching for evidence or merely confirmation?
+    Has the analysis become unnecessarily complicated?
+    What would a competent human expert challenge here?
+    What should remain a human judgment rather than an AI judgment?
+
+22. HUMAN-AI BOUNDARY
+
+Never present yourself as an infallible authority.
+
+Your role is to augment my reasoning, not replace it.
+
+For consequential matters, encourage independent verification and appropriate domain expertise.
+
+Do not use apparent confidence, eloquence, verbosity, or complexity as substitutes for evidence.
+
+Remember:
+
+    A convincing explanation can still be wrong.
+
+Therefore evaluate claims independently of how persuasive they sound.
+23. ADAPTIVE DEPTH
+
+Do not use the entire framework mechanically for every question.
+
+Use the minimum depth necessary.
+Level 1 — Simple
+
+Answer directly and accurately.
+Level 2 — Analytical
+
+Identify assumptions, evidence, reasoning, and alternatives.
+Level 3 — Critical
+
+Perform counterargument, bias, evidence, uncertainty, and failure analysis.
+Level 4 — Deep
+
+Run the complete reasoning loop, including competing models, verification, red-teaming, decision analysis, and feedback design.
+
+Choose the appropriate level based on complexity and stakes.
+24. RESPONSE DISCIPLINE
+
+Do not expose private chain-of-thought or hidden reasoning.
+
+Instead provide:
+
+    conclusions
+    relevant assumptions
+    concise reasoning summaries
+    evidence
+    counterarguments
+    uncertainty
+    verification status
+    decision criteria
+    actionable next steps.
+
+The objective is auditable reasoning, not an exhaustive transcript of internal thought.
+25. DEFAULT RESPONSE FORMAT
+
+For a substantive question, use this structure when appropriate:
+1. Problem Definition
+
+What I understand you are asking.
+2. Key Assumptions
+
+What must be true for the reasoning to work.
+3. Evidence
+
+What is known, unknown, verified, disputed, or inferred.
+4. Analysis
+
+How the evidence relates to the question.
+5. Counterargument
+
+The strongest serious challenge.
+6. Alternative Explanation
+
+Another plausible way to understand the situation.
+7. Stress Test
+
+What could make the conclusion fail?
+8. Synthesis
+
+The strongest conclusion currently justified.
+9. Confidence & Uncertainty
+
+What is solid and what remains uncertain.
+10. Action / Next Test
+
+What should happen next.
+11. Loop Status
+
+What has been resolved, what remains open, and what the next iteration should investigate.
+
+Do not force this format when a simpler response is more appropriate.
+26. THE GOLDEN RULE
+
+Never optimize merely for producing an answer.
+
+Optimize for:
+
+    A better question → better evidence → better reasoning → better decision → better feedback → better next question.
+
+The objective is not to make me dependent on you.
+
+The objective is to make my thinking progressively stronger.
+
+When my reasoning improves, the loop has succeeded.
+
+When new evidence invalidates an earlier conclusion, revise it without defensiveness.
+
+When you discover that your own previous answer was wrong, say so explicitly and correct it.
+
+When I am wrong, tell me clearly.
+
+When I am right, explain why the position survives scrutiny rather than merely agreeing.
+
+When neither side has enough evidence, preserve the uncertainty.
+
+Do not manufacture certainty to complete the loop.
+
+The loop is complete only when the conclusion is sufficiently robust for the current purpose—or when we have clearly identified what must be learned next.
+START PROTOCOL
+
+When I give you a new problem, do not immediately jump to the answer.
+
+First determine:
+
+What exactly are we trying to establish, decide, understand, create, or test?
+
+Then enter the appropriate reasoning loop.
+
+Begin.
+Why I designed it this way
+
+The important improvement over the common “intellectual sparring partner” prompts is that this isn't just “challenge me.” Existing prompts repeatedly emphasize assumptions, counterarguments, logic, alternatives, and truth over agreement.
+
+The research adds another layer: critical AI use involves verification, understanding AI limitations, and reflection, rather than merely getting the model to produce a skeptical response.
+
+And the recent Nature discussion supports the broader design principle of treating AI as a sparring partner rather than an oracle, with active intellectual engagement rather than passive consumption.
+
+So the distinctive element I have added is loop engineering:
+
+    Don't ask AI for the final answer → ask AI to help construct a process that can detect when the answer needs to change.
+
+That makes the system applicable beyond debate—to research, learning, writing, programming, strategy, business, science, planning, decision-making, problem-solving, and everyday reasoning.
+
+One important caveat: no prompt can guarantee that an AI will never hallucinate or reason incorrectly. The prompt can impose behaviors that make errors easier to detect and encourage verification, but it cannot turn an LLM into an infallible verifier. The research itself emphasizes the need for users to critically evaluate AI outputs.
+
+If you want, the next step can be to stress-test this master prompt itself—treat it as a hypothesis, attack its weaknesses, remove redundant instructions, and evolve it through several iterations into a much tighter v2 “Critical Thinking Loop Engine.”
+You said:
+ChatGPT said:
+
+Yes. I have not edited, compressed, or redesigned your master prompt. I treated this turn as a research/architecture pass only.
+
+I went directly through Anthropic's current public documentation, including its prompt-engineering guidance and the newer context-management material. One important distinction emerged: prompt engineering and context engineering are related but not the same problem. Anthropic's current documentation treats prompt structure, context placement, examples, thinking, tool use, memory, caching, compaction, and context editing as different layers.
+
+Below is the research inventory I think we should preserve before you decide what to do with the master prompt.
+1. Anthropic's core prompt-engineering principles
+
+Anthropic's current guidance emphasizes:
+
+    Clear, direct instructions
+    Explicitly specifying the desired behavior/output
+    Sequential instructions when order matters
+    Providing relevant context and motivation
+    Using examples/few-shot prompting
+    Structuring complex prompts with XML tags
+    Assigning a role
+    Explicit output-format requirements
+    Telling the model what to do, rather than primarily what not to do
+    Matching prompt structure/style to desired output style.
+
+Their useful mental model is essentially:
+
+    Treat the model like a highly capable new employee who doesn't know your conventions unless you tell it.
+
+Their “golden rule” is particularly relevant to what you're building: if a colleague with minimal context would be confused by the prompt, the model probably will be too.
+
+That argues strongly against our current master prompt's large number of individually worded instructions. I'm deliberately not saying yet what should be removed; that's a decision for the next stage.
+2. Context is its own engineering layer
+
+Anthropic's newer documentation goes beyond conventional “prompt engineering.”
+
+Their context-window documentation defines the model's active context as including:
+
+    system prompt
+    conversation messages
+    tool definitions
+    tool results
+    images
+    documents
+    generated output
+    thinking content, where applicable.
+
+All of these consume context-window capacity.
+
+This matters enormously for your proposed loop-engineering system.
+
+The master prompt is therefore only one component:
+
+MODEL BEHAVIOR
+      +
+STATIC INSTRUCTIONS
+      +
+TASK CONTEXT
+      +
+USER INPUT
+      +
+CONVERSATION STATE
+      +
+TOOLS / SOURCES
+      +
+MEMORY
+      +
+LOOP STATE
+      ↓
+ACTIVE CONTEXT
+      ↓
+MODEL RESPONSE
+      ↓
+NEW STATE
+      ↓
+NEXT LOOP
+
+That is a substantially richer architecture than simply making one enormous “master prompt.”
+3. Anthropic explicitly recommends separating types of content
+
+Their XML guidance is particularly relevant.
+
+They recommend separating things such as:
+
+<instructions>
+...
+</instructions>
+
+<context>
+...
+</context>
+
+<input>
+...
+</input>
+
+<examples>
+...
+</examples>
+
+and using nested structures when information has hierarchy. For multiple documents, they specifically recommend structures such as:
+
+<documents>
+    <document>
+        <source>...</source>
+        <document_content>...</document_content>
+    </document>
+</documents>
+
+The rationale is that XML makes different kinds of information less ambiguous to the model.
+
+This gives us an important research direction:
+
+semantic context ≠ instructions.
+
+We should investigate whether the future master prompt should explicitly distinguish:
+
+RULES
+GOALS
+CONTEXT
+KNOWLEDGE
+EVIDENCE
+USER POSITION
+TASK
+STATE
+EXAMPLES
+OUTPUT CONTRACT
+LOOP STATE
+
+rather than putting all of those into one undifferentiated instruction stream.
+
+I am not recommending that structure yet—only recording it as a design implication from the documentation.
+4. Long-context ordering is important
+
+Anthropic's long-context guidance contains a surprisingly important finding.
+
+For large inputs—particularly 20k+ tokens—they recommend:
+
+LONG CONTEXT / DOCUMENTS
+        ↓
+INSTRUCTIONS
+        ↓
+QUERY
+
+rather than putting the query before the large body of information.
+
+They specifically recommend putting long-form data near the beginning and the query toward the end. Their documentation reports that this ordering improved response quality by up to 30% in their tests for complex multi-document inputs.
+
+They also recommend grounding long-context tasks by asking the model to identify relevant quotations before performing the subsequent task.
+
+This is directly relevant to your eventual system because a critical-thinking loop could potentially have:
+
+<source_material>
+...
+</source_material>
+
+<task>
+...
+</task>
+
+<question>
+...
+</question>
+
+rather than simply:
+
+Here is everything.
+Now think critically.
+
+5. Examples are not just decoration
+
+Anthropic describes examples as one of the most reliable ways to steer output format, tone, and structure.
+
+Their guidance is:
+
+    examples should be relevant
+    examples should be diverse
+    examples should cover edge cases
+    examples should be explicitly separated from instructions
+    XML <example> / <examples> structures are recommended
+    they suggest 3–5 examples as a useful range.
+
+This introduces an important architectural possibility for our master prompt:
+
+Instead of describing every desired behavior with another paragraph of instructions, some behaviors could potentially be demonstrated.
+
+For example:
+
+<example>
+    <input>...</input>
+    <desired_behavior>...</desired_behavior>
+</example>
+
+That may be substantially more efficient than adding another 100 words explaining the same behavior.
+
+Again: research finding, not an edit recommendation yet.
+6. “Think harder” is not necessarily the answer
+
+Anthropic's current guidance has changed significantly compared with older prompt-engineering advice.
+
+For newer Claude models, Anthropic describes adaptive thinking, where the model dynamically determines how much reasoning is appropriate based on task complexity and configured effort.
+
+They explicitly caution against indiscriminate prompting for excessive thoroughness because it can cause:
+
+    unnecessary exploration
+    excessive tool use
+    latency
+    token consumption
+    over-analysis.
+
+Their guidance is increasingly:
+
+    Use targeted instructions rather than blanket instructions to be maximally thorough.
+
+They also recommend general instructions over excessively prescriptive hand-written reasoning procedures because model reasoning can exceed a human-designed step sequence.
+
+That is potentially very important for our existing master prompt, which currently contains a huge manually specified reasoning sequence.
+
+I'm flagging the tension, not resolving it.
+7. Self-checking is useful—but can become over-verification
+
+Anthropic recommends asking the model to verify its answer against explicit criteria in many cases, particularly coding/math-type tasks.
+
+But their current model-specific guidance also warns that newer models can already perform substantial self-verification and that excessive verification instructions can produce unnecessary tokens and latency.
+
+So there is a design distinction worth preserving:
+
+verification
+
+versus
+
+mandatory verification of everything
+
+Those are not equivalent.
+
+For our eventual loop engine, this may become:
+
+VERIFY WHEN THE EXPECTED VALUE OF VERIFICATION JUSTIFIES IT
+
+rather than a universal “always check everything” rule.
+
+Again, that's a candidate principle—not a decision.
+8. Prompt chaining versus internal reasoning
+
+Anthropic makes an important distinction between:
+Internal model reasoning
+
+and
+Explicit prompt chaining
+
+Prompt chaining means breaking a complex task into separate model calls where the intermediate result can be inspected, evaluated, branched, or reused.
+
+They give the pattern:
+
+generate
+   ↓
+evaluate
+   ↓
+refine
+
+as a particularly useful form of self-correction.
+
+This is extremely relevant to your loop engineering concept.
+
+A loop could therefore exist at several levels:
+
+LEVEL 1
+single response:
+reason → verify → answer
+
+LEVEL 2
+conversation:
+answer → user feedback → revise
+
+LEVEL 3
+prompt chain:
+generate → evaluate → refine
+
+LEVEL 4
+agent:
+research → test → act → observe → revise
+
+LEVEL 5
+persistent system:
+state → action → feedback → memory → next session
+
+Those should not necessarily be collapsed into one giant prompt.
+9. Context windows are finite resources
+
+Anthropic explicitly describes context as a finite resource and notes that irrelevant content can degrade model focus. Their context-editing documentation says context should be actively curated, not simply allowed to grow indefinitely.
+
+This is an important conceptual upgrade.
+
+Instead of thinking:
+
+    “More context = better reasoning”
+
+the engineering model becomes:
+
+    Relevant context + appropriate context density > maximum possible context.
+
+That has major implications for your proposed system.
+
+A critical-thinking engine may eventually need to distinguish:
+
+ACTIVE CONTEXT
+REFERENCE CONTEXT
+ARCHIVED CONTEXT
+PERSISTENT MEMORY
+EPHEMERAL TOOL RESULTS
+LOOP STATE
+
+rather than treating all previous conversation as equally important.
+10. Context editing
+
+Anthropic currently provides context editing mechanisms that can selectively clear old content as conversations grow.
+
+Their documented strategies include:
+
+    clearing old tool results
+    clearing thinking blocks
+    client-side compaction
+    preserving selected recent context
+    integrating context editing with persistent memory.
+
+The underlying principle is more important than the API mechanics:
+
+    Old information should not automatically remain in the active reasoning context merely because it happened earlier.
+
+That's highly compatible with your loop-engineering idea.
+11. Compaction
+
+Anthropic now recommends server-side compaction as the primary mechanism for long-running conversations and agentic workflows.
+
+The basic architecture is:
+
+LONG CONVERSATION
+       ↓
+CONTEXT GROWS
+       ↓
+COMPACTION TRIGGER
+       ↓
+SUMMARY / STATE REPRESENTATION
+       ↓
+OLDER CONTEXT REPLACED
+       ↓
+CONTINUE
+
+Anthropic's stated rationale isn't merely token-limit avoidance.
+
+They explicitly say that as conversations become longer, models can struggle to maintain focus across the full history; compaction keeps the active context smaller and more focused.
+
+This is directly relevant to a persistent critical-thinking system.
+12. Memory is different from context
+
+Anthropic's memory-tool documentation makes another important distinction.
+
+Memory provides persistent information across conversations by storing information externally and retrieving it when needed.
+
+Their model is essentially:
+
+PERSISTENT MEMORY
+       ↓
+retrieve only when relevant
+       ↓
+ACTIVE CONTEXT
+       ↓
+reason
+       ↓
+new learning
+       ↓
+MEMORY
+
+This is just-in-time context retrieval, rather than dumping the entire historical knowledge base into every prompt.
+
+For our project, this suggests that “memory” shouldn't simply mean:
+
+    save the whole conversation.
+
+It could instead mean:
+
+what was learned
+what was decided
+what remains unresolved
+what changed
+what failed
+what assumptions were disproven
+what preferences/rules are stable
+what should be retrieved next time
+
+That is potentially much closer to your loop-engineering concept.
+13. Prompt caching
+
+I also checked Anthropic's current prompt-caching documentation.
+
+Caching is fundamentally different from memory.
+
+Caching ≠ remembering.
+
+Caching means reusing an already-processed prompt prefix.
+
+Anthropic describes the cache as operating over prefixes of:
+
+tools
++
+system
++
+messages
+
+up to a cache breakpoint.
+
+So architecturally:
+
+CACHE
+=
+optimization of repeated context
+
+MEMORY
+=
+persistent information storage
+
+CONTEXT
+=
+currently available information
+
+PROMPT
+=
+instructions governing behavior
+
+These should not be conflated.
+14. Cache read / write / uncached input
+
+Anthropic exposes three relevant usage quantities:
+
+cache_creation_input_tokens
+cache_read_input_tokens
+input_tokens
+
+Their total-input relationship is:
+
+total input
+=
+cache_read_input_tokens
++
+cache_creation_input_tokens
++
+input_tokens
+
+The last category represents the input after the last cache breakpoint.
+
+That gives us a potential future architecture like:
+
+┌──────────────────────────────┐
+│ STABLE SYSTEM / FRAMEWORK    │
+│ cached                       │
+├──────────────────────────────┤
+│ STABLE DOMAIN CONTEXT        │
+│ cached                       │
+├──────────────────────────────┤
+│ CURRENT LOOP STATE           │
+│ potentially cached           │
+├──────────────────────────────┤
+│ CURRENT USER INPUT           │
+│ uncached / changing          │
+└──────────────────────────────┘
+
+I'm not proposing this as the final architecture yet.
+
+I'm recording the distinction because you specifically asked about cache-in/cache-out and the bells and whistles.
+15. Cache invalidation matters
+
+Anthropic documents that context editing can interact with caching.
+
+For example, clearing tool results can invalidate cached prefixes. Keeping certain thinking blocks can preserve cache continuity; clearing them can invalidate the cache at that point.
+
+Therefore a sophisticated loop system potentially has competing optimization objectives:
+
+CONTEXT QUALITY
+       ↕
+CONTEXT SIZE
+       ↕
+CACHE REUSE
+       ↕
+LATENCY
+       ↕
+COST
+       ↕
+INFORMATION RETENTION
+
+This is a systems-engineering problem, not merely a prompt-writing problem.
+16. Tool results are context, too
+
+Anthropic's context documentation explicitly includes tool definitions and tool results in the context window.
+
+Their context-editing documentation specifically targets old tool results because agentic workflows can accumulate huge amounts of them.
+
+That means an eventual critical-thinking engine could distinguish:
+
+CLAIM
+SOURCE
+TOOL RESULT
+INTERPRETATION OF SOURCE
+MODEL INFERENCE
+DECISION
+
+rather than treating everything returned by a tool as equivalent to truth.
+
+That distinction could be particularly important for hallucination resistance.
+17. Research architecture
+
+Anthropic's current research guidance recommends:
+
+    define success criteria
+    verify sources
+    develop competing hypotheses
+    track confidence
+    periodically self-critique the research approach
+    maintain research notes/state
+    update a hypothesis tree
+    work systematically through the research.
+
+This aligns very closely with the direction we were already exploring.
+
+The significant difference is that Anthropic frames this as an agentic research workflow, rather than simply a paragraph inside a system prompt.
+18. Competing hypotheses
+
+One particularly useful concept to retain is:
+
+Do not begin with:
+"What is the answer?"
+
+Begin with:
+"What are the plausible explanations?"
+
+Then:
+
+H1
+H2
+H3
+...
+   ↓
+evidence
+   ↓
+update confidence
+   ↓
+eliminate / weaken / strengthen
+   ↓
+current best explanation
+
+This is much more rigorous than merely instructing the model to “consider alternatives.”
+19. State tracking
+
+Anthropic recommends structured formats for structured state and unstructured notes for general progress.
+
+For long-running work they discuss maintaining things such as:
+
+progress
+tests
+state
+todo
+research notes
+
+and carrying that state across context transitions.
+
+That suggests a potentially useful distinction:
+
+REASONING OUTPUT
+
+versus
+
+REASONING STATE
+
+The former is what the user sees.
+
+The latter is what the system needs to continue the loop.
+
+That distinction may become central to what you're designing.
+20. “State” could be more important than “prompt”
+
+The Anthropic material collectively points toward a larger architecture:
+
+                 ┌──────────────┐
+                 │ SYSTEM RULES │
+                 └──────┬───────┘
+                        ↓
+              ┌───────────────────┐
+              │ CURRENT CONTEXT   │
+              └─────────┬─────────┘
+                        ↓
+             ┌────────────────────┐
+             │ CURRENT TASK       │
+             └──────────┬─────────┘
+                        ↓
+              ┌──────────────────┐
+              │ MODEL PROCESSING │
+              └─────────┬────────┘
+                        ↓
+              ┌──────────────────┐
+              │ RESPONSE / ACT   │
+              └─────────┬────────┘
+                        ↓
+                 ┌────────────┐
+                 │ FEEDBACK   │
+                 └─────┬──────┘
+                       ↓
+             ┌───────────────────┐
+             │ UPDATED STATE     │
+             └───────┬───────────┘
+                     ↓
+              NEXT ITERATION
+
+That's closer to loop engineering than the original concept of a single master prompt.
+21. Anthropic's warning about over-prompting
+
+This is probably the single most relevant finding for your request to “cut the fluff.”
+
+Anthropic explicitly discusses over-prompting.
+
+For newer models they recommend replacing broad instructions such as:
+
+    “always use X”
+
+with more targeted conditions such as:
+
+    “use X when it would improve understanding.”
+
+They also caution that instructions that were useful for older models can cause newer models to over-trigger tools or perform unnecessary work.
+
+So the eventual optimization target shouldn't simply be:
+
+    shorter prompt
+
+It should be:
+
+    higher behavioral signal per instruction.
+
+That's a much better engineering criterion.
+22. Instruction hierarchy needs investigation
+
+There is another area I would keep on the research table before we edit anything:
+
+system instructions
+developer instructions
+user instructions
+tool instructions
+retrieved context
+documents
+examples
+memory
+current task
+
+These aren't all semantically equivalent.
+
+A future version of your engine may need an explicit instruction/context hierarchy, especially if it is intended to work across ChatGPT, Claude, Gemini, API agents, or other models.
+
+I would not yet assume that one universal XML architecture will behave identically across all models.
+
+Anthropic's documentation is specifically optimized for Claude, even though many of its principles are broadly applicable.
+23. What Anthropic's documentation does NOT establish
+
+This is important because you asked me not to hallucinate.
+
+Anthropic's documentation does not establish that:
+
+    XML is universally superior for every model.
+    One giant master prompt is the optimal architecture.
+    A longer critical-thinking prompt necessarily produces better reasoning.
+    Prompt engineering can eliminate hallucinations.
+    Asking for “critical thinking” guarantees critical thinking.
+    Chain-of-thought instructions guarantee correct reasoning.
+    More context necessarily improves output.
+    Memory and context are interchangeable.
+    Prompt caching improves reasoning quality.
+    Compaction preserves every important nuance.
+    A model's visible explanation is equivalent to its internal reasoning.
+    Anthropic's recommendations automatically transfer unchanged to GPT-family models.
+
+Those would be extrapolations.
+24. The current research map
+
+Without making any design decisions yet, I would map the material we've collected into these layers:
+
+LAYER 0 — MODEL
+Capabilities / reasoning / tool behavior
+
+LAYER 1 — INSTRUCTION
+Role / objectives / constraints / priorities
+
+LAYER 2 — SEMANTIC STRUCTURE
+XML / sections / hierarchy / content types
+
+LAYER 3 — CONTEXT
+Task / documents / evidence / conversation
+
+LAYER 4 — EXAMPLES
+Few-shot / edge cases / behavioral demonstrations
+
+LAYER 5 — REASONING
+Analysis / hypotheses / verification / critique
+
+LAYER 6 — TOOLS
+Search / retrieval / computation / external actions
+
+LAYER 7 — STATE
+Progress / decisions / unresolved questions / hypotheses
+
+LAYER 8 — MEMORY
+Persistent knowledge across sessions
+
+LAYER 9 — CONTEXT MANAGEMENT
+Compaction / editing / retrieval / pruning
+
+LAYER 10 — CACHE
+Reusable prompt prefixes / cache reads / cache writes
+
+LAYER 11 — LOOP
+Action → observation → feedback → state update
+
+LAYER 12 — EVALUATION
+Did the system actually improve reasoning?
+
+This is research scaffolding, not the proposed final prompt.
+The particularly important discovery
+
+I think your original instinct about “loop engineering” is actually broader than prompt engineering.
+
+A conventional prompt asks:
+
+"How should the model respond?"
+
+Your proposed system is closer to:
+
+"What information should remain active?
+What should be retrieved?
+What should be challenged?
+What should be tested?
+What should be remembered?
+What should be discarded?
+What feedback should update the model's current state?
+And when should the system run another loop?"
+
+That is context + state + evaluation + iteration engineering, with the prompt being only one layer.
+
+Anthropic's current documentation supports essentially all of those underlying mechanisms—structured prompts, contextual separation, examples, long-context positioning, research loops, state tracking, memory, context editing, compaction, and caching—but does not itself prescribe the integrated architecture we're imagining.
+
+I have deliberately not cut a single word from your existing master prompt or decided what belongs in/out. We now have the Anthropic-side technical material on the table for that decision.
