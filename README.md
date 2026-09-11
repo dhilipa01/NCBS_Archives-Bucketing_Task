@@ -2,6 +2,8 @@
 
 Generates real NCBS-archive-style test data (folders + scanned jpegs) and buckets the jpegs against their matching folders.
 
+By Dhilipan Sankar
+
 ## Why
 
 Archival digitisation produces a flat batch of scanned pages that need routing back into a folder taxonomy. 
