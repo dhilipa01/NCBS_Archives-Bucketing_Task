@@ -6,7 +6,7 @@ Generates real NCBS-archive-style test data (folders + scanned jpegs) and bucket
 
 Archival digitisation produces a flat batch of scanned pages that need routing back into a folder taxonomy. 
 This repo simulates that: `scanned_jpegs/` is the flat scan-output pool, `folders/` is the target taxonomy, and `bucket_jpegs.py` is the routing step. 
-If the jpegs already lived in correctly-named folders there'd be nothing to solve — the split is the point.
+If the jpegs already lived in correctly-named folders there'd be nothing to solve. Tthe split is the point.
 
 ## Full dataset
 
