@@ -91,4 +91,4 @@ python -c "import json; a=json.load(open('_generated/bucket_output.json')); b=js
 
 ## License
 
-MIT — see `LICENSE`.
+MIT. Please do see `LICENSE`.
