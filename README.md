@@ -18,6 +18,22 @@ The full 500+ folder / 50,000+ jpeg dataset is attached as a [GitHub Release](..
 
 Chosen over anything more specialised because it's readable and runnable by people across roles and technical backgrounds without a build toolchain. Its relevant here since this is archival/records tooling, used across the organisation. 
 
+## Repo layout
+
+```
+generate_test_data.py     generator
+bucket_jpegs.py            bucketing script
+test_data_sample/          small real slice, committed
+docs/
+  NCBS_dossier.md           organizational + ID-scheme research, sourced
+  task_desc.txt              original task spec
+  critical_thinking.md       reasoning-framework prompt tested across sessions
+  CLAUDE.md                  agentic-tool instructions + decision log
+  session_transcript.jsonl   this session, PII-redacted
+  chatgpt_session_log.txt    separate critical-thinking test session
+  Prompts_screenshot/        prompt/tool-usage screenshots
+```
+
 ## Folder & file ID scheme
 
 IDs follow the convention documented by [Archives at NCBS](https://archives.ncbs.res.in/collections), confirmed via a worked example on their catalogue:
@@ -71,22 +87,6 @@ Both scripts distinguish three outcomes: a jpeg can be **bucketed** (folder exis
 
 ```
 python -c "import json; a=json.load(open('_generated/bucket_output.json')); b=json.load(open('_generated/expected_output.json')); print(a=={'buckets':b['buckets'],'orphans':b['orphans'],'empty_folders':b['empty_folders'],'malformed':a['malformed']})"
-```
-
-## Repo layout
-
-```
-generate_test_data.py     generator
-bucket_jpegs.py            bucketing script
-test_data_sample/          small real slice, committed
-docs/
-  NCBS_dossier.md           organizational + ID-scheme research, sourced
-  task_desc.txt              original task spec
-  critical_thinking.md       reasoning-framework prompt tested across sessions
-  CLAUDE.md                  agentic-tool instructions + decision log
-  session_transcript.jsonl   this session, PII-redacted
-  chatgpt_session_log.txt    separate critical-thinking test session
-  Prompts_screenshot/        prompt/tool-usage screenshots
 ```
 
 ## License
