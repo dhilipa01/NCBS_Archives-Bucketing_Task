@@ -10,7 +10,9 @@ If the jpegs already lived in correctly-named folders there'd be nothing to solv
 
 ## Full dataset
 
-This repo commits a small representative slice at `test_data_sample/` (real files, same structure, ~15 folders) so the layout is inspectable without pulling the full set. The full 500+ folder / 50,000+ jpeg dataset is attached as a [GitHub Release](../../releases) — download and extract it, or just run `generate_test_data.py` locally to reproduce it exactly (it's seeded, so the release archive and a local run are identical).
+This repo commits a small representative slice at `test_data_sample/` (actual files, same structure, ~15 folders) so the layout is inspectable without pulling the full set. 
+
+The full 500+ folder / 50,000+ jpeg dataset is attached as a [GitHub Release](../../releases); download and extract it, or just run `generate_test_data.py` locally to reproduce it exactly (it's seeded, so the release archive and a local run are identical).
 
 ## Why Python
 
@@ -61,7 +63,7 @@ Clone and run it.
 
 `bucket_jpegs.py` reads that same layout, groups jpegs by folder ID, and writes `bucket_output.json` + `bucket_report.txt`. Pass `--sort` to also physically copy each jpeg into its matching `folders/<id>/` — without that flag it only reports, it doesn't touch the source files.
 
-Both scripts distinguish three outcomes: a jpeg can be **bucketed** (folder exists), an **orphan** (well-formed name, but no matching folder — ~2% of the generated set, on purpose), or **malformed** (doesn't match the expected filename pattern at all). Folders with zero jpegs are reported separately as **empty**, also ~2% of the generated set on purpose. A real archive dataset always has gaps; a generator that produces a clean 1:1 dataset wouldn't test anything.
+Both scripts distinguish three outcomes: a jpeg can be **bucketed** (folder exists), an **orphan** (well-formed name, but no matching folder ~2% of the generated set, on purpose), or **malformed** (doesn't match the expected filename pattern at all). Folders with zero jpegs are reported separately as **empty**, also ~2% of the generated set on purpose. A real archive dataset always has gaps; a generator that produces a clean 1:1 dataset wouldn't test anything.
 
 ## Verifying correctness
 
