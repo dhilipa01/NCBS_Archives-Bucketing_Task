@@ -94,3 +94,12 @@ python -c "import json; a=json.load(open('_generated/bucket_output.json')); b=js
 ## License
 
 MIT. Please do see `LICENSE`.
+
+# Gemini Transcript 
+
+I really hate Gemini, I really don't like using it. It is by far without dramatic exaggeration, one of the most manipulative chatbots out there.
+
+Its even worse as an agentic coding agent. In any given workday I'd work with cursor, codex etc... Anything but Gemini.
+
+https://docs.google.com/document/d/194aOI2Wu6mzu-ivNnkc1jQYxoBSCTOu_oYDNCIqN4NI/edit?usp=sharing
+
